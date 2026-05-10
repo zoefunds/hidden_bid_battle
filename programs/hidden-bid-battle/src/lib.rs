@@ -12,7 +12,7 @@ use anchor_lang::prelude::*;
 
 // NOTE: This is a placeholder Program ID. We replace it in Step 2.B
 // after generating our actual program keypair with `solana-keygen`.
-declare_id!("11111111111111111111111111111111");
+declare_id!("2v7VurFDYeNNpSDBNdjVK6wrB5Tru14PrhoMMKTV1Y53");
 
 #[program]
 pub mod hidden_bid_battle {
