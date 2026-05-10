@@ -2,8 +2,12 @@
 resolver = "2"
 members = [
     "programs/*",
-    "confidential/*",
 ]
+
+# NOTE: When we scaffold the Arcium MXE in Phase 3, we will add
+# "confidential/*" back to this members list. We exclude it for now
+# because the directory is empty and Cargo refuses to load
+# non-existent member manifests.
 
 [workspace.package]
 version = "0.1.0"
