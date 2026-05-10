@@ -48,9 +48,8 @@ coverage/
 # ─── Rust / Cargo ────────────────────────────────────────
 target/
 **/*.rs.bk
-Cargo.lock
-!/Cargo.lock
-!/programs/**/Cargo.lock
+# Commit root Cargo.lock for reproducible builds (we are an app, not a lib)
+# Cargo.lock  <-- intentionally NOT ignored at root
 
 # ─── Anchor ──────────────────────────────────────────────
 .anchor/
