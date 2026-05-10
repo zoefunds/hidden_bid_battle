@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+members = [
+    "programs/*",
+    "confidential/*",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/zoefunds/hidden_bid_battle"
+
+[workspace.dependencies]
+# We will add anchor-lang, arcium, etc. here in subsequent steps.
+# Centralizing versions here means every program in the workspace
+# uses the exact same version of every dependency — no version drift.
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1
+
+[profile.release.build-override]
+opt-level = 3
+incremental = false
+codegen-units = 1

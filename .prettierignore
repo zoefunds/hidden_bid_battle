@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build outputs
+dist
+build
+.next
+.turbo
+target
+out
+
+# Generated
+*.tsbuildinfo
+coverage
+
+# Lock files
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+Cargo.lock
+
+# Anchor / Solana / Arcium
+.anchor
+test-ledger
+.arcium
+
+# Docs we don't want reformatted
+docs/diagrams
